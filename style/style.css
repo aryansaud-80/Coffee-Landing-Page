@@ -1,0 +1,142 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400..900&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --main-color: #000000;
+  --primary-color: #2f1000;
+}
+
+button {
+  background-color: var(--primary-color);
+  color: white;
+  padding: 14px 30px;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  font-family: sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+}
+
+body {
+  background-color: rgb(24, 24, 24);
+  width: 100vw;
+  height: 100vh;
+}
+
+.header {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 20px 0;
+
+  background-color: #967259;
+  height: 40px;
+}
+
+.logo {
+  color: white;
+  font-size: 2rem;
+  font-weight: bold;
+  font-family: "Playfair Display", serif;
+}
+
+ul li {
+  display: inline-block;
+  margin: 0 20px;
+  list-style: none;
+}
+
+ul li a {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: white;
+  font-family: sans-serif;
+  font-size: 18px;
+  transition: color 1s ease-in;
+}
+
+ul li a:hover {
+  color: 2px solid var(--primary-color);
+}
+
+.about {
+  display: grid;
+  grid-template-columns: 500px 800px;
+  justify-content: center;
+  align-items: center;
+}
+
+.image-container {
+  width: 50%;
+  height: 100%;
+  flex-wrap: wrap;
+  margin-top: -50px;
+  margin-left: 200px;
+}
+
+.image {
+  width: 400px;
+  height: 400px;
+}
+
+.description {
+  width: 50%;
+  height: 100%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 100px;
+}
+
+.description h1 {
+  font-size: 2.5rem;
+  color: white;
+  font-family: "Playfair Display", serif;
+  font-weight: 600;
+  margin-right: 10px;
+}
+
+.description h1 span {
+  color: var(--primary-color);
+}
+
+.description p {
+  font-size: 1.2rem;
+  color: white;
+  font-family: sans-serif;
+  margin-top: 30px;
+}
+
+.description button {
+  margin-top: 30px;
+  transition: background-color 1s ease-in, color 1s ease-in;
+}
+
+.description button:hover {
+  background-color: aliceblue;
+  color: var(--primary-color);
+}
+
+.icon-cart {
+  color: white;
+  font-size: 1.4rem;
+  margin-left: 10px;
+  background-color: #000000;
+  padding: 6px;
+  border-radius: 50%;
+  transition: background-color 1s ease-in;
+}
+
+.description button:hover .icon-cart {
+  background-color: var(--primary-color);
+}
+
+
