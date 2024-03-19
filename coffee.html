@@ -5,14 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Coffee Landing Page</title>
 
+    <!-- Link to css file -->
     <link rel="stylesheet" href="style/style.css" />
 
+    <!-- Link to remix icon -->
     <link
       href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css"
       rel="stylesheet"
     />
   </head>
   <body>
+    <!-- Header section start -->
     <header class="header">
       <div class="logo-container">
         <h1 class="logo">Logo</h1>
@@ -20,15 +23,17 @@
 
       <nav>
         <ul>
-          <li><a href="">Home</a></li>
-          <li><a href="">About</a></li>
-          <li><a href="">Product</a></li>
-          <li><a href="">Contact us</a></li>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#product">Product</a></li>
+          <li><a href="#contact">Contact us</a></li>
         </ul>
       </nav>
     </header>
+    <!-- Header section End -->
 
-    <section class="about">
+    <!-- About section start -->
+    <section class="about" id="home">
       <div class="image-container">
         <img src="images/hero.png" class="image" />
       </div>
@@ -44,8 +49,144 @@
           the morning
         </p>
 
-            <button >Order now <i class="ri-shopping-cart-line icon-cart"></i></button>
+        <button>
+          Order now<i class="ri-shopping-cart-line icon-cart"></i>
+        </button>
       </div>
     </section>
+    <!-- About section End  -->
+
+    <!-- Our story section start -->
+    <section class="ourStory" id="about">
+      <div class="description-story">
+        <div>
+          <div class="line"></div>
+          <h1>Our Story</h1>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio,
+            sed. Vitae pariatur eos quasi perspiciatis.
+          </p>
+
+          <button>Learn More</button>
+        </div>
+      </div>
+
+      <div class="image-container1">
+        <img src="images/story-section.png" class="image1" />
+      </div>
+    </section>
+    <!-- Our story section End -->
+
+    <!-- Product Section Start -->
+    <section class="products" id="product">
+      <h1 class="title_product">Our Products</h1>
+      <div class="cards">
+        <div class="card1">
+          <img src="images/image1.jpeg" alt="" />
+          <h1>Cappuccino</h1>
+          <button>Buy now</button>
+        </div>
+
+        <div class="card1">
+          <img src="images/image2.jpg" alt="" class="image2-nd" />
+          <h1>Chai latte</h1>
+          <button>Buy now</button>
+        </div>
+
+        <div class="card1">
+          <img src="images/image3.jpg" alt="" class="image2-nd" />
+          <h1>Espresso</h1>
+          <button>Buy now</button>
+        </div>
+
+        <div class="card1">
+          <img src="images/image1.jpeg" alt="" />
+          <h1>Cappuccino</h1>
+          <button>Buy now</button>
+        </div>
+
+        <div class="card1">
+          <img src="images/image1.jpeg" alt="" />
+          <h1>Cappuccino</h1>
+          <button>Buy now</button>
+        </div>
+
+        <div class="card1">
+          <img src="images/image1.jpeg" alt="" />
+          <h1>Cappuccino</h1>
+          <button>Buy now</button>
+        </div>
+      </div>
+    </section>
+    <!-- Product section End -->
+
+
+    <!-- Contact Section Start -->
+    <section class="Contact" id="contact">
+      <div class="title">
+        <h1>Subscribe to get the Latest News</h1>
+      </div>
+
+      <div class="sub-title">
+        <p>Don't miss out on our latest news, updates, tips and special offers</p>
+      </div>
+
+      <div class="sumbit_section">
+        <input type="email" placeholder="Enter your mail">
+        <button>Subscribe</button>
+      </div>
+    </section>
+    <!-- Contact Section End -->
+
+
+    <!-- Footer section Start -->
+
+    <section class="footer">
+      <div class="first">
+        <h4>Logo</h4>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Praesentium, officiis quia. Nostrum, quae beatae hic sunt accusantium quos!</p>
+
+        <div class="icon_footer">
+          <i class="ri-facebook-circle-fill"></i>
+          <i class="ri-youtube-fill"></i>
+          <i class="ri-instagram-line"></i>
+          <i class="ri-twitter-x-line"></i>
+        </div>
+      </div>
+
+      <div class="about_footer">
+        <h4>About</h4>
+        <p>Menu</p>
+        <p>Features</p>
+        <p>News & Blogs</p>
+        <p>Help & Support</p>
+      </div>
+
+      <div class="company">
+        <h4>Company</h4>
+        <p>How we work</p>
+        <p>Terms of services</p>
+        <p>Pricing</p>
+        <p>FAQ</p>
+      </div>
+
+      <div class="contact_us">
+        <h4>Contact Us</h4>
+        <p>Tikapur-01,kailali</p>
+        <p>+097 056743</p>
+        <p>logocoffee@gmail.com</p>
+        <p>www.logocoffee.com</p>
+      </div>
+    </section>
+
+    <!-- Copyright Section Start -->
+
+    <div class="copyright">
+      <p>&#9400; Aryan saud || Coffee Landing Page</p>
+    </div>
+    <!-- Copyright Section End -->
+
+    <!-- Footer section End -->
+
   </body>
 </html>
