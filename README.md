@@ -1,3 +1,3 @@
 # Simple coffee landing page 👇
 
-![Course Thumbnail](/sample.png)
+![Course Thumbnail](/sample.jpg)
