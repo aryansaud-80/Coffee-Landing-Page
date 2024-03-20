@@ -113,6 +113,7 @@ ul li a:hover {
   justify-content: center;
   align-items: center;
   margin-top: 100px;
+  text-align: center;
 }
 
 .description h1 {
@@ -166,10 +167,10 @@ ul li a:hover {
 /* Story Section start */
 .ourStory {
   display: grid;
-  grid-template-columns: 500px 800px;
+  grid-template-columns: 1fr 1fr;
   justify-content: center;
   align-items: center;
-  margin-top: 60px;
+  margin-top: 50px;
   width: 100vw;
   height: 500px;
   position: relative;
@@ -178,15 +179,15 @@ ul li a:hover {
 }
 
 .image-container1 {
-  width: 500px;
-  height: 500px;
+  width: 400px;
+  height: 400px;
+  overflow: hidden;
+  margin-bottom: 140px;
+  margin-left: 8rem;
 }
 .image1 {
-  width: 500px;
-  height: 500px;
-  position: absolute;
-  top: -70px;
-  right: 45px;
+  width: 400px;
+  height: 400px;
 }
 
 .description-story {
@@ -194,17 +195,17 @@ ul li a:hover {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 900px;
+  height: 100%;
   text-align: center;
   margin-top: 70px;
-  margin-left: 2px;
+  margin-left: 4rem;
 }
 
 .line {
   width: 80px;
   height: 2px;
   background-color: var(--bg_text-color);
-  margin-left: 30px;
+  margin-left: -20rem;
 }
 
 .description-story h1 {
@@ -221,8 +222,8 @@ ul li a:hover {
   font-size: 1.2rem;
   font-weight: 600;
   color: var(--bg_text-color);
-  width: 500px;
   margin-bottom: 20px;
+  width: 70%;
   transition: background-color 0.5s ease-in;
 }
 
@@ -297,11 +298,9 @@ ul li a:hover {
   height: 130px;
 }
 
-
-
 /* Contact section start */
 
-.Contact{
+.Contact {
   width: 100vw;
   height: 300px;
 
@@ -314,32 +313,32 @@ ul li a:hover {
   margin-top: 70px;
 }
 
-.title h1{
+.title h1 {
   font-family: "Playfair Display", serif;
   font-size: 2.4rem;
   font-weight: 700;
   margin-top: 20px;
 }
 
-.sub-title p{
+.sub-title p {
   font-family: sans-serif;
   font-size: 16px;
   font-weight: 400;
   margin-top: 8px;
 }
 
-.sumbit_section{
+.sumbit_section {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 404px; 
+  width: 404px;
   height: 60px;
   margin-top: 10px;
   background-color: var(--header-color);
   border-radius: 50px;
 }
 
-.sumbit_section input{
+.sumbit_section input {
   padding: 22px 55px;
   background-color: transparent;
   border: none;
@@ -347,25 +346,24 @@ ul li a:hover {
   border-radius: 50px;
 }
 
-.sumbit_section button{
+.sumbit_section button {
   padding: 19.5px 32px;
-  transition: background-color .3s ease, color .3s ease;
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
 
-.sumbit_section button:active{
+.sumbit_section button:active {
   background-color: var(--text_bg-color);
   color: var(--primary-color);
 }
 
-::placeholder{
+::placeholder {
   font-size: 17px;
   font-weight: 400;
 }
 /* Contact section End */
 
-
 /* Footer section start */
-.footer{
+.footer {
   display: grid;
   grid-template-columns: 400px 200px 200px 200px;
   justify-content: space-evenly;
@@ -380,14 +378,14 @@ ul li a:hover {
 .first h4,
 .about_footer h4,
 .company h4,
-.contact_us h4{
-  font-family:  "Playfair Display", serif;
+.contact_us h4 {
+  font-family: "Playfair Display", serif;
   font-size: 18px;
   font-weight: 600;
   margin-bottom: 15px;
 }
 
-.first h4{
+.first h4 {
   font-size: 3rem;
   color: var(--header-color);
 }
@@ -395,27 +393,27 @@ ul li a:hover {
 .first p,
 .about_footer p,
 .company p,
-.contact_us p{
+.contact_us p {
   font-family: sans-serif;
   font-size: 14px;
   font-weight: 400;
   line-height: 2rem;
 }
 
-.first p{
+.first p {
   line-height: 1rem;
   width: 400px;
   margin-bottom: 10px;
 }
 
-.icon_footer{
+.icon_footer {
   display: grid;
   grid-template-columns: 20px 20px 20px 20px;
   column-gap: 10px;
 }
 
 /* Copyright section start */
-.copyright{
+.copyright {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -429,7 +427,68 @@ ul li a:hover {
 
 /* Footer section End */
 
-
 /* MEDIA QUERIES START */
+@media screen and (max-width: 1000px) {
+  .about {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-content: center;
+    align-items: center;
+  }
 
+  .image-container {
+    display: none;
+  }
+
+  .ourStory {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .description-story {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+
+  .image-container1,
+  .line {
+    display: none;
+  }
+
+  .products{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .cards{
+    display: grid;
+    grid-template-columns: 180px 180px;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .footer{
+    display: grid;
+    grid-template-columns: 200px;
+    row-gap: 10px;
+  }
+
+  .about_footer,
+  .icon_footer,
+  .company,
+  .contact_us{
+    border-bottom: 2px solid white;
+    padding-bottom: 4px;
+  }
+
+  .copyright{
+    display: none;
+  }
+
+}
 /* MEDIA QUERIES END */
